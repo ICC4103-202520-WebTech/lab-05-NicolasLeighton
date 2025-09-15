@@ -7,7 +7,13 @@
     <meta name="mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <nav>
+        <%= link_to "Rooms", rooms_path %> |
+        <%= link_to "Guests", guests_path %> |
+        <%= link_to "Reservations", reservations_path %> |
+        <%= link_to "Services", services_path %>
+    </nav>
+    <hr>
     <%= yield :head %>
 
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
